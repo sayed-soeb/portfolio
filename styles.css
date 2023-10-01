@@ -1,0 +1,408 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0077bb; /* LinkedIn blue */
+}
+
+header h1 {
+    font-size: 36px;
+    color: #221b1b;
+}
+
+header p {
+    font-size: 18px;
+    color: #292020;
+}
+
+section {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#skills ul {
+    list-style: none;
+    text-align: center;
+}
+
+.skill-icons {
+    font-size: 36px;
+}
+
+.skill-icons i {
+    margin: 10px;
+    color: #0077bb; /* LinkedIn blue */
+}
+
+#education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#education li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0077bb; /* LinkedIn blue */
+    color: #fff;
+}
+
+/* Social media links */
+.social-links {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #0077bb; /* LinkedIn blue */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00aaff; /* Slightly lighter blue */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 16px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-icons {
+    font-size: 36px;
+}
+
+.skill-icons i {
+    margin: 10px;
+    color: #0077bb; /* LinkedIn blue */
+}
+
+/* Education Section */
+#education {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education-item p {
+    margin: 0;
+    padding: 0;
+}
+
+.education-item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #0077bb; /* LinkedIn blue */
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Project slider styling */
+.project-slider {
+    display: flex;
+    overflow-x: scroll; /* Change from "auto" to "scroll" */
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    animation: fadeInUp 1s ease;
+    
+    white-space: nowrap;
+    /* Add a fixed width to the project slider to control the visible area */
+    width: 100%; /* You can adjust the width as needed */
+}
+
+/* Hide scrollbar for Firefox */
+.project-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.project-slider :hover {
+    background-image: linear-gradient(to bottom,rgb(10, 224, 236),rgb(165, 243, 165));
+}
+
+.project-card {
+    flex: 0 0 300px;
+    height: 400px;
+    margin: 0 20px;
+    border-radius: 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    min-width: 300px;
+}
+
+
+
+/* Add this CSS for the navigation buttons */
+#prevBtn {
+    border-radius: 50%;
+    background:white;
+    scale: 2;
+    transform: translateY(450%);
+    
+    margin-right: 100%;
+    color: #0077bb; /* LinkedIn blue */
+
+}
+#nextBtn {
+    border-radius: 50%;
+    background: white;
+    scale: 2;
+    margin-left: 100%;
+    transform: translateY(-430%);
+    color: #0077bb; /* LinkedIn blue */
+}
+
+
+
+/* Project Slider styling 
+.project-slider {
+    display: flex;
+    overflow-x: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: hidden;
+}
+
+.project-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card {
+    flex: 0 0 300px;
+    margin: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+*/
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.project-card p {
+    word-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0077bb; /* LinkedIn blue */
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #00aaff; /* Slightly lighter blue */
+}
+
+/* Certificates Section */
+#certificates {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Certificate Cards */
+.certificate-cards {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+.certificate-card {
+    flex: 0 0 calc(33.33% - 20px);
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.certificate-cards :hover {
+    background-image: linear-gradient(to bottom,rgb(10, 224, 236),rgb(165, 243, 165));
+}
+
+.certificate-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.certificate-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.certificate-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black; /* LinkedIn blue */
+    transition: color 0.3s;
+}
+
+.certificate-card a:hover {
+    color: #00aaff; /* Slightly lighter blue */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details p {
+    font-size: 16px;
+}
+
+/* Social media links */
+.social-links {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #0077bb; /* LinkedIn blue */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #00aaff; /* Slightly lighter blue */
+}
+.profile-image img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
